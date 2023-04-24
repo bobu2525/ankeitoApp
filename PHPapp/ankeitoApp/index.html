@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>は、HTML文書の最初の行に書かれる宣言文で、
+     この文書がHTML5で書かれた文書であることを宣言します。 -->
+<!DOCTYPE html>
+<!-- このコードはHTML文書の開始を示す要素であり、lang属性を使用して、文書の言語が日本語であることを示します。 -->
+<html lang="ja">
+  <!-- HTML文書のヘッダー（head）に含まれる要素を定義します。 -->
+  <head>
+       <!-- このコードは、HTMLドキュメントで使用する文字コードを指定するためのmetaタグの1つで、UTF-8という文字コードを指定しています。 -->
+       <meta charset="UTF-8">
+       <!-- 「viewport」という名前の属性に、ブラウザでのページの表示方法に関する情報を指定することができます。 -->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- このコードは、HTMLドキュメントのタイトルを設定するための要素であり、ブラウザーのタブや検索結果の見出しに表示されます。 -->
+       <title>php基礎</title>
+ 
+       <!-- Google Fontsの読み込み -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+  <body>
+       <!-- <form>タグは、HTML文書内にフォームを作成するために使用されます。
+       フォームを作成するためには、<form>タグで囲まれた部分に、フォームの要素を記述することになります。
+       method属性：フォームの送信方法を指定します。主にGETとPOSTが使用されます。 -->
+       <form method="post" action="check.php">
+            ニックネームを入力せよだよ<br>
+
+            <!-- このコードは、HTMLのフォームにおいて、名前を入力するためのテキストボックスを作成しています。
+            inputタグを使用して、テキストボックスを出力しています。
+            name属性に"nickname"を指定しているため、このテキストボックスから送信される値の名前が"nickname"となります。
+            type属性に"text"を指定しているため、テキストボックスを作成しています。
+            style属性に"width:100px"を指定しているため、テキストボックスの幅を100ピクセルに設定しています。 -->
+            <input name="nickname" type="text" style="width:100px"><br>
+            メールアドレスを入力しろ。<br>
+            <input name="email" type="text" style="width:200px"><br>
+            ご意見を一言お聞せください。<br>
+            <input name="goiken" type="text" style="width:300px"><br>
+            <br>
+
+            <!-- このコードは、HTMLのフォームにおいて、入力内容をサーバーに送信するためのボタンを作成しています。
+            inputタグを使用して、ボタンを出力しています。
+            type属性に"submit"を指定しているため、フォームを送信するためのボタンを作成しています。
+            value属性に"送信"を指定しているため、ボタンのラベルに"送信"と表示されます。 -->
+            <input type="submit" value="送信">
+            <br>
+            <br>
+            <a href="menu.html">メニューにもどる</a><br>
+       </form>
+        <br>
+        
+  </body>
+</html>
